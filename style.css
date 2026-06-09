@@ -1,0 +1,42 @@
+/* Shared Styling */
+body { font-family: 'Arial', sans-serif; margin: 0; background: #f9f9f9; color: #333; }
+nav { background: #2c3e50; padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; }
+nav .logo { color: white; font-size: 24px; font-weight: bold; }
+nav ul { list-style: none; display: flex; margin: 0; }
+nav ul li { margin-left: 20px; }
+nav ul li a { color: white; text-decoration: none; font-size: 16px; }
+
+.container { max-width: 900px; margin: 50px auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+h2 { color: #2c3e50; border-left: 5px solid #3498db; padding-left: 10px; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { padding: 15px; border: 1px solid #ddd; text-align: left; }
+th { background: #3498db; color: white; }
+
+.skills-grid { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+.skill-card { background: #ecf0f1; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+.skill-card:hover { background: #3498db; color: white; transform: translateY(-2px); }
+
+/* Contact Form Styling */
+.contact-form { max-width: 600px; margin: 30px auto; }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; font-weight: bold; color: #2c3e50; margin-bottom: 8px; }
+.form-group input,
+.form-group textarea { width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 5px; font-size: 14px; font-family: 'Arial', sans-serif; transition: 0.3s; box-sizing: border-box; }
+.form-group input:focus,
+.form-group textarea:focus { outline: none; border-color: #3498db; box-shadow: 0 0 5px rgba(52, 152, 219, 0.3); }
+.submit-btn { background: #3498db; color: white; padding: 12px 40px; border: none; border-radius: 25px; font-weight: bold; cursor: pointer; transition: 0.3s; font-size: 16px; }
+.submit-btn:hover { background: #2980b9; transform: scale(1.05); }
+
+/* Social Links */
+.social-link { color: #3498db; text-decoration: none; font-weight: bold; }
+.social-link:hover { text-decoration: underline; color: #2980b9; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav { padding: 15px 20px; flex-direction: column; }
+    nav ul { flex-direction: column; margin-top: 15px; }
+    nav ul li { margin-left: 0; margin-bottom: 10px; }
+    .container { margin: 30px 15px; padding: 15px; }
+    .contact-form { width: 90%; }
+}
